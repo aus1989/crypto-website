@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+</head>
+<body>
+  <div class='header'>
+    <div class="container">
+      <h2>Thrive<span class='primary'>Token</span></h2>
+      <ul class="nav-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Trade</a></li>
+        <li><a href="/">Blog</a></li>
+        <li><a href="/">Contact</a></li>
+        <i class="bi bi-x hamburger" onClick="closeMenu()"></i>
+      </ul>
+      <div class="btn-group">
+        <button class='btn'>Wallet</button>
+      </div>
+      
+      <i class="bi bi-list hamburger" onClick="openMenu()"></i>
+
+
+    </div>
+  </div>
+
+  <!-- --------- HERO SECTION -------- -->
+  <div class='hero'>
+    <div class="container">
+      <div class="left-side">
+        <p>Buy & Sell Crypto 24/7 using your account</p>
+        <h1>Invest in Cryptocurrency Today</h1>
+        <p>Buy, Sell and Store hundreds of cryptocurrencies</p>
+        <div class="input-container">
+          <input 
+            type="email" 
+            placeholder='Enter you email'
+          />
+          <button class='btn'>Learn More</button>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="img-container">
+          <img src="images/BTC3.png" alt="Bitcoin" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-------------- COIN TABLE ------------>
+  
+  <div class="table">
+    <div class="container">
+      <h2>Top Coins</h2>
+      <table class="table-container">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">1h Change</th>
+            <th scope="col" id="mkt">Mkt. Cap</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <!----------- FUNDING SECTION ------------>
+  <div class='funding'>
+    <div class="container">
+
+      <div class="right-side">
+        <div class="img-container">
+          <img src="images/profit-loss-light.gif" alt="profit & loss" />
+        </div>
+      </div>
+
+      <div class="left-side">
+        <h1>
+          Get In-Depth Profit & Loss Analysis
+        </h1>
+        <p>
+        Connect your wallet to get 24h, daily, weekly and cumulative Profit & Loss analysis. Level up your crypto investing strategy.
+        </p>
+        <button class='btn'>Learn More</button>
+      </div>
+    </div>
+  </div>
+
+    <!------------- CONTACT SECTION --------->
+    <div class='contact'>
+      <div class="container">
+        <div class="left-side">
+          <div class="img-container">
+            <img src="images/phone3d.gif" alt="phone" />
+          </div>
+        </div>
+        <div class="right-side">
+          <h1>Earn passive income with crypto.</h1>
+          <p>
+            Earn up to 10% annual rewards on digital assets. Simply hold your assets in the app to automatically earn rewards at the end of each month.
+          </p>
+          <div class='input-container'>
+            <input 
+              type="email"
+              placeholder='Address'
+            />
+            <button class='btn'>Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!------------ FOOTER SECTION ------------>
+  <div class='footer'>
+    <p>Get in touch</p>
+    <div class="container">
+      <div class="col">
+        <h5>Explore</h5>
+        <span class='bar'></span>
+          <a href="/">Crypto Tracker</a>
+          <a href="/">Buy Crypto with card</a>
+          <a href="/">Earn</a>
+          <a href="/">Crypto News</a>
+          <a href="/">Blog</a>
+      </div>
+      <div class="col">
+        <h5>Support</h5>
+        <span class='bar'></span>
+          <a href="/">Contact</a>
+          <a href="/">Chat</a>
+          <a href="/">Help Center</a>
+          <a href="/">FAQ</a>
+      </div>
+      <div class="col">
+        <h5>Company</h5>
+        <span class='bar'></span>
+          <a href="/">About us</a>
+          <a href="/">Product Updates</a>
+          <a href="/">Pricing</a>
+          <a href="/">Career</a>
+      </div>
+      <div class="col">
+        <h5>Social</h5>
+        <span class='bar'></span>
+          <a href="/"><i class="bi bi-facebook icon"></i></a>
+          <a href="/"><i class="bi bi-github icon"></i></a>
+          <a href="/"><i class="bi bi-linkedin icon"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let navMenu = document.querySelector(".nav-menu");
+
+    function openMenu(){
+      navMenu.style.right = "0";
+    }
+
+    function closeMenu(){
+      navMenu.style.right = "-250px";
+    }
+  </script>
+
+  <script src="table.js"></script>
+</body>
+</html>
